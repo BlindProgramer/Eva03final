@@ -3,10 +3,10 @@ package com.example.eva02v1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,6 +20,8 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Login extends AppCompatActivity {
     TextInputEditText editTextEmail, editTextPassword;
     Button buttonLogin;
+
+    Button buttonRegister1;
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
 
@@ -33,6 +35,7 @@ public class Login extends AppCompatActivity {
         Button buttonLogin = findViewById(R.id.buttonLogin);
 
 
+
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -43,7 +46,18 @@ public class Login extends AppCompatActivity {
                 login();
 
             }
+
         });
+        Button buttonRegister1 = findViewById(R.id.buttonRegister1);
+        buttonRegister1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Registro.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }
@@ -62,6 +76,8 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             Toast.makeText(Login.this, "El Login se realizo correctamente", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(Login.this, MainActivity.class);
+                            startActivity(intent);
 
                         } else {
                             Toast.makeText(Login.this, "Mail o La password es incorrecta", Toast.LENGTH_SHORT).show();

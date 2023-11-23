@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "185517463542",
+    "firebase_url": "https://evaluacion03-be986-default-rtdb.firebaseio.com",
+    "project_id": "evaluacion03-be986",
+    "storage_bucket": "evaluacion03-be986.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185517463542:android:c707950bf126f80d6499d7",
+        "android_client_info": {
+          "package_name": "com.example.eva02v1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBmYN2QGdIy8YtVruj_wPFhasxd_qss5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

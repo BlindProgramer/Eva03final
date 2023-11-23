@@ -5,32 +5,31 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:id="@+id/editTextUsernameRegister"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de usuario"
+        android:inputType="text" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextEmailRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/editTextPasswordRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/buttonRegister2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión" />
-
-    <Button
-        android:id="@+id/buttonRegister1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        android:layout_marginTop="500dp"/>
+        android:text="Registrarse" />
 
 </LinearLayout>
